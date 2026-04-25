@@ -1,0 +1,75 @@
+section:not(#home-section, #recensioni-section) {
+  min-height: 100vh;
+}
+section:not(#home-section, #recensioni-section) div.container-component {
+  min-height: inherit;
+  display: flex !important;
+  align-items: start !important;
+}
+
+.site-main > .inner > header > div {
+  width: calc(100% + 8rem) !important;
+}
+
+#home-section p.text-component.style-3 {
+  margin-top: 60px !important;
+}
+
+a[href$='#recensioni'],
+a[href$='#recensioni']:hover {
+  padding-left: 0 !important;
+  border: 0 !important;
+  border-color: transparent !important;
+  justify-content: start !important;
+}
+
+#recensioni-section li a {
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
+  transition: ease .3s;
+  border-bottom: 1px solid #EDE7E4;
+}
+
+#recensioni-section ul a::before {
+  display: block;
+  font-family: 'Courier Prime', monospace;
+  letter-spacing: -0.05rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#recensioni-section a.n01::before {
+  content: 'Wes Anderson | 2009';
+}
+#recensioni-section a.n02::before {
+  content: 'Bong Joon-Ho | 2019';
+}
+#recensioni-section a.n03::before {
+  content: 'Chloé Zhao | 2025';
+}
+
+#recensioni-section li a:hover {
+  transform: translateX(10px);
+}
+
+section.active h3 span {
+  display: flex !important;
+  justify-content: space-between;
+}
+section.active h3 span br {
+  display: none;
+}
+
+span[style*="color: #00000000"]::before {
+  content: '';
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+#parasite-section span[style*="color: #00000000"]::before {
+  background: url(https://media.outnow.ch/Movies/Bilder/2019/Gisaengchung/002.jpg);
+}
