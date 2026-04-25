@@ -46,15 +46,15 @@ a[href$='#recensioni']:hover {
 /*-------------------------------------------------- Director & Movie Dates */
 
 /* Hamnet */
-#recensioni-section a.n03::before {
+#recensioni-section a[href$='#hamnet']::before {
   content: 'Chloé Zhao | 2025';
 }
 /* Parasite */
-#recensioni-section a.n02::before {
+#recensioni-section a[href$='#parasite']::before {
   content: 'Bong Joon-Ho | 2019';
 }
 /* Fantastic Mr.Fox */
-#recensioni-section a.n01::before {
+#recensioni-section a[href$='#fantastic-mr-fox']::before {
   content: 'Wes Anderson | 2009';
 }
 
