@@ -1,3 +1,4 @@
+/*-------------------------------------------------- Structure */
 section:not(#home-section, #recensioni-section) {
   min-height: 100vh;
 }
@@ -6,15 +7,17 @@ section:not(#home-section, #recensioni-section) div.container-component {
   display: flex !important;
   align-items: start !important;
 }
-
+.site-main > .inner > * > .full,
 .site-main > .inner > header > div {
   width: calc(100% + 8rem) !important;
 }
 
+/*-------------------------------------------------- Copyright */
 #home-section p.text-component.style-3 {
   margin-top: 60px !important;
 }
 
+/*-------------------------------------------------- Review Links */
 a[href$='#recensioni'],
 a[href$='#recensioni']:hover {
   padding-left: 0 !important;
@@ -23,7 +26,7 @@ a[href$='#recensioni']:hover {
   justify-content: start !important;
 }
 
-#recensioni-section li a {
+#recensioni-section ul li a {
   text-align: left;
   padding: 0;
   margin-top: 20px;
@@ -31,7 +34,7 @@ a[href$='#recensioni']:hover {
   border-bottom: 1px solid #EDE7E4;
 }
 
-#recensioni-section ul a::before {
+#recensioni-section ul li a::before {
   display: block;
   font-family: 'Courier Prime', monospace;
   letter-spacing: -0.05rem;
@@ -39,20 +42,31 @@ a[href$='#recensioni']:hover {
   line-height: 1.5;
   font-weight: 400;
 }
-#recensioni-section a.n01::before {
-  content: 'Wes Anderson | 2009';
-}
-#recensioni-section a.n02::before {
-  content: 'Bong Joon-Ho | 2019';
-}
+
+/*-------------------------------------------------- Director & Movie Dates */
+
+/* Hamnet */
 #recensioni-section a.n03::before {
   content: 'Chloé Zhao | 2025';
 }
+/* Parasite */
+#recensioni-section a.n02::before {
+  content: 'Bong Joon-Ho | 2019';
+}
+/* Fantastic Mr.Fox */
+#recensioni-section a.n01::before {
+  content: 'Wes Anderson | 2009';
+}
+
 
 #recensioni-section li a:hover {
   transform: translateX(10px);
 }
 
+
+/*-------------------------------------------------- Movie Review Page */
+
+/* Credits & Review date */
 section.active h3 span {
   display: flex !important;
   justify-content: space-between;
@@ -61,6 +75,8 @@ section.active h3 span br {
   display: none;
 }
 
+
+/*-------------------------------------------------- Movie images */
 span[style*="color: #00000000"]::before {
   content: '';
   background-size: cover;
@@ -70,6 +86,16 @@ span[style*="color: #00000000"]::before {
   height: 300px;
   position: relative;
 }
+
+/* Hamnet */
+#parasite-section span[style*="color: #00000000"]::before {
+  background: url();
+}
+/* Parasite */
 #parasite-section span[style*="color: #00000000"]::before {
   background: url(https://media.outnow.ch/Movies/Bilder/2019/Gisaengchung/002.jpg);
+}
+/* Fantastic Mr.Fox */
+#parasite-section span[style*="color: #00000000"]::before {
+  background: url();
 }
