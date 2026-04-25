@@ -88,14 +88,14 @@ span[style*="color: #00000000"]::before {
 }
 
 /* Hamnet */
-#parasite-section span[style*="color: #00000000"]::before {
-  background: url();
+#hamnet-section span[style*="color: #00000000"]::before {
+  background: url(https://media.outnow.ch/Movies/Bilder/2025/Hamnet/011.jpg);
 }
 /* Parasite */
 #parasite-section span[style*="color: #00000000"]::before {
   background: url(https://media.outnow.ch/Movies/Bilder/2019/Gisaengchung/002.jpg);
 }
 /* Fantastic Mr.Fox */
-#parasite-section span[style*="color: #00000000"]::before {
-  background: url();
+#fantastic-mr-fox-section span[style*="color: #00000000"]::before {
+  background: url(https://media.outnow.ch/Movies/Bilder/2009/FantasticMrFox/030.jpg);
 }
