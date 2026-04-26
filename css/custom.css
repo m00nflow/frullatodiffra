@@ -66,7 +66,7 @@ a[href$='#recensioni']:hover {
 
 /*-------------------------------------------------- Movie Review Page */
 
-/* Credits & Review date */
+/* Producer & Review date */
 section.active h3 span {
   display: flex !important;
   justify-content: space-between;
@@ -75,27 +75,14 @@ section.active h3 span br {
   display: none;
 }
 
-
-/*-------------------------------------------------- Movie images */
-span[style*="color: #00000000"]::before {
-  content: '';
-  background-size: cover !important;
-  background-position: center !important;
-  display: block;
-  width: 100%;
-  height: 320px;
-  position: relative;
+@media screen and (max-width: 576px) {
+  section.active h3 span {
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
 }
 
-/* Hamnet */
-#hamnet-section span[style*="color: #00000000"]::before {
-  background: url(https://media.outnow.ch/Movies/Bilder/2025/Hamnet/011.jpg);
-}
-/* Parasite */
-#parasite-section span[style*="color: #00000000"]::before {
-  background: url(https://media.outnow.ch/Movies/Bilder/2019/Gisaengchung/002.jpg);
-}
-/* Fantastic Mr.Fox */
-#fantastic-mr-fox-section span[style*="color: #00000000"]::before {
-  background: url(https://media.outnow.ch/Movies/Bilder/2009/FantasticMrFox/030.jpg);
+/* Image Credits */
+p sup {
+    font-size: 10px !important;
 }
