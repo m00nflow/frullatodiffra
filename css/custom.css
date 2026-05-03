@@ -57,6 +57,50 @@ a[href$='#recensioni']:hover {
 #recensioni-section a[href$='#fantastic-mr-fox']::before {
   content: 'Wes Anderson | 2009';
 }
+/* Challengers */
+#recensioni-section a[href$='#challengers']::before {
+  content: 'Luca Guadagnino | 2024';
+}
+/* Cime Tempestose */
+#recensioni-section a[href$='#cime-tempestose']::before {
+  content: 'Emerald Fennell | 2026';
+}
+/* Dragon Trainer */
+#recensioni-section a[href$='#dragon-trainer']::before {
+  content: 'Dean DeBlois | 2025';
+}
+/* Father Mother Sister Brother */
+#recensioni-section a[href$='#father-mother-sister-brother']::before {
+  content: 'Jim Jarmusch | 2025';
+}
+/* Here */
+#recensioni-section a[href$='#here']::before {
+  content: 'Robert Zemeckis | 2024';
+}
+/* La La Land */
+#recensioni-section a[href$='#la-la-land']::before {
+  content: 'Damien Chazelle | 2016';
+}
+/* La lezione */
+#recensioni-section a[href$='#la-lezione']::before {
+  content: 'Stefano Mordini | 2025';
+}
+/* Mrs Doubtfire */
+#recensioni-section a[href$='#mrs-doubtfire']::before {
+  content: 'Chris Columbus | 1993';
+}
+/* Saltburn */
+#recensioni-section a[href$='#saltburn']::before {
+  content: 'Emerald Fennell | 2023';
+}
+/* The divergent series */
+#recensioni-section a[href$='#the-divergent-series']::before {
+  content: 'Neil Burger, Robert Schwentke | 2014-2016';
+}
+/* We live in time */
+#recensioni-section a[href$='#we-live-in-time']::before {
+  content: 'John Crowley | 2024';
+}
 
 
 #recensioni-section li a:hover {
