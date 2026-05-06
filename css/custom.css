@@ -12,6 +12,36 @@ section:not(#home-section, #recensioni-section) div.container-component {
   width: calc(100% + 8rem) !important;
 }
 
+/* Header */
+
+img[alt="logo_frullatodiffra"] {
+  max-width: 25px !important;
+}
+
+.container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner > :nth-child(1) {
+    width: auto !important;
+}
+.container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner {
+    gap: 30px;
+}
+
+.links-component {
+    line-height: 1;
+    position: relative;
+    top: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner > * > *:last-child {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner {
+    flex-direction: column;
+  }
+}
+
 /*-------------------------------------------------- Copyright */
 #home-section p.text-component.style-3 {
   margin-top: 60px !important;
