@@ -134,7 +134,44 @@ p sup {
 /* Review Frullati */
 
 div.rating {
-    height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.zero {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/zero.svg);
+}
+div.zero-half {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/zero-half.svg);
+}
+div.one {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/one.svg);
+}
+div.one-half {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/one-half.svg);
+}
+div.two {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/two.svg);
+}
+div.two-half {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/two-half.svg);
+}
+div.three {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/three.svg);
+}
+div.three-half {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/three-half.svg);
+}
+div.four {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/four.svg);
+}
+div.four-half {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/four-half.svg);
+}
+div.five {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/five.svg);
+}
+div.five-half {
+  background: url(https://m00nflow.github.io/frullatodiffra/img/rating/five-half.svg);
 }
