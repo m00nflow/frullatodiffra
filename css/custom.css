@@ -130,3 +130,11 @@ section.active h3 span br {
 p sup {
     font-size: 10px !important;
 }
+
+/* Review Frullati */
+
+div.rating {
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
