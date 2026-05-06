@@ -135,8 +135,8 @@ p sup {
 
 div.rating {
   height: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 
 div.zero {
