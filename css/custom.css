@@ -1,8 +1,8 @@
 /*-------------------------------------------------- Structure */
-section:not(#home-section, #recensioni-section) {
+section:not(#home-section, #recensioni-section, #chi-sono-section, #contatti-section) {
   min-height: 100vh;
 }
-section:not(#home-section, #recensioni-section) div.container-component {
+section:not(#home-section, #recensioni-section, #chi-sono-section, #contatti-section) div.container-component {
   min-height: inherit;
   display: flex !important;
   align-items: start !important;
@@ -45,6 +45,16 @@ img[alt="logo_frullatodiffra"] {
 /*-------------------------------------------------- Copyright */
 #home-section p.text-component.style-3 {
   margin-top: 60px !important;
+}
+
+/* Buttons & inputs */
+button:hover,
+a[role="button"]:hover {
+    background: #EDE7E4 !important;
+}
+
+textarea {
+    max-width: 100%;
 }
 
 /*-------------------------------------------------- Review Links */
