@@ -82,7 +82,14 @@ textarea {
   padding-right: 0 !important;
 }
 .form-component.instance-1 .actions button::before {
-  animation: none;
+    animation: unset !important;
+    width: 70px !important;
+    opacity: unset !important;
+    height: unset !important;
+    background-size: unset !important;
+    background-repeat: unset !important;
+    background-position: unset !important;
+    background-image: unset !important;
 }
 
 /*-------------------------------------------------- Review Links */
