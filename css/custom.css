@@ -48,9 +48,28 @@ img[alt="logo_frullatodiffra"] {
 }
 
 /* Buttons & inputs */
-button:hover,
-a[role="button"]:hover {
-    background: #EDE7E4 !important;
+button,
+a[role="button"] {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+button::before,
+a[role="button"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #EDE7E4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+  z-index: -1;
+}
+
+button:hover::before,
+a[role="button"]:hover::before {
+  transform: scaleX(1);
 }
 
 textarea {
@@ -58,9 +77,10 @@ textarea {
 }
 
 /*-------------------------------------------------- Review Links */
-a[href$='#recensioni'],
-a[href$='#recensioni']:hover {
+a[role="button"]:not(ul.icons-component a),
+a[role="button"]:not(ul.icons-component a):hover {
   padding-left: 0 !important;
+  padding-right: 0 !important;
   border: 0 !important;
   border-color: transparent !important;
   justify-content: start !important;
