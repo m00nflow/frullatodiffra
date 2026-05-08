@@ -43,9 +43,9 @@ img[alt="logo_frullatodiffra"] {
 }
 
 /*-------------------------------------------------- Copyright */
-#home-section p.text-component.style-3 {
+/* #home-section p.text-component.style-3 {
   margin-top: 60px !important;
-}
+} */
 
 /* Buttons & inputs */
 
@@ -97,7 +97,7 @@ a[role="button"]:not(ul.icons-component a):hover,
   padding: 0;
   margin-top: 20px;
   transition: ease .3s;
-  border-bottom: 1px solid #EDE7E4;
+  border-bottom: 1px solid #EDE7E4 !important;
 }
 
 #recensioni-section ul li a::before {
