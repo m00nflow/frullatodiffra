@@ -48,15 +48,18 @@ img[alt="logo_frullatodiffra"] {
 }
 
 /* Buttons & inputs */
-button,
-a[role="button"] {
+
+button:not(#recensioni-section button),
+a[role="button"]:not(#recensioni-section a),
+#contatti-section button {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-button::before,
-a[role="button"]::before {
+button:not(#recensioni-section button)::before,
+a[role="button"]:not(#recensioni-section a)::before,
+#contatti-section button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -67,8 +70,9 @@ a[role="button"]::before {
   z-index: -1;
 }
 
-button:hover::before,
-a[role="button"]:hover::before {
+button:not(#recensioni-section button):hover::before,
+a[role="button"]:not(#recensioni-section a):hover::before,
+#contatti-section button::before {
   transform: scaleX(1);
 }
 
@@ -78,7 +82,9 @@ textarea {
 
 /*-------------------------------------------------- Review Links */
 a[role="button"]:not(ul.icons-component a),
-a[role="button"]:not(ul.icons-component a):hover {
+a[role="button"]:not(ul.icons-component a):hover,
+#contatti-section button,
+#contatti-section button:hover {
   padding-left: 0 !important;
   padding-right: 0 !important;
   border: 0 !important;
