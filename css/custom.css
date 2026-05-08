@@ -50,16 +50,14 @@ img[alt="logo_frullatodiffra"] {
 /* Buttons & inputs */
 
 button:not(#recensioni-section button),
-a[role="button"]:not(#recensioni-section a),
-#contatti-section button {
+a[role="button"]:not(#recensioni-section a) {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 button:not(#recensioni-section button)::before,
-a[role="button"]:not(#recensioni-section a)::before,
-#contatti-section button::before {
+a[role="button"]:not(#recensioni-section a)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -71,8 +69,7 @@ a[role="button"]:not(#recensioni-section a)::before,
 }
 
 button:not(#recensioni-section button):hover::before,
-a[role="button"]:not(#recensioni-section a):hover::before,
-#contatti-section button::before {
+a[role="button"]:not(#recensioni-section a):hover::before {
   transform: scaleX(1);
 }
 
@@ -80,11 +77,17 @@ textarea {
     max-width: 100%;
 }
 
+.form-component .actions button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.form-component.instance-1 .actions button::before {
+  animation: none;
+}
+
 /*-------------------------------------------------- Review Links */
 a[role="button"]:not(ul.icons-component a),
-a[role="button"]:not(ul.icons-component a):hover,
-#contatti-section button,
-#contatti-section button:hover {
+a[role="button"]:not(ul.icons-component a):hover {
   padding-left: 0 !important;
   padding-right: 0 !important;
   border: 0 !important;
