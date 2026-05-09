@@ -22,6 +22,7 @@ img[alt="logo_frullatodiffra"] {
     width: auto !important;
 }
 .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner {
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -32,15 +33,22 @@ img[alt="logo_frullatodiffra"] {
 }
 
 @media screen and (max-width: 576px) {
-  .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner > * > *:last-child {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
   .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: end !important;
+    gap: 0;
+  }
+  .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner > * > *:last-child {
+    align-items: end;
+  }
+  .image-component.style-2 > .frame {
+    width: 100% !important;
+  }
+  img[alt="logo_frullatodiffra"] {
+    max-width: 40px !important;
   }
 }
+
 
 /*-------------------------------------------------- Copyright */
 /* #home-section p.text-component.style-3 {
@@ -83,13 +91,17 @@ textarea {
 }
 .form-component.instance-1 .actions button::before {
     animation: unset !important;
-    width: 70px !important;
+    width: 80px !important;
     opacity: unset !important;
     height: unset !important;
     background-size: unset !important;
     background-repeat: unset !important;
     background-position: unset !important;
     background-image: unset !important;
+}
+
+div.checkbox:has(input#form01-consent) label {
+    align-items: start;
 }
 
 /*-------------------------------------------------- Review Links */
@@ -250,4 +262,32 @@ div.five {
 }
 div.five-half {
   background: url(https://m00nflow.github.io/frullatodiffra/img/rating/five-half.svg);
+}
+
+
+/*-------------------------------------------------- Footer */
+
+@media screen and (max-width: 735px) {
+    div.inner:has(p#text06) {
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column-reverse !important;
+    }
+    
+    p#text06 {
+        text-align: center !important;
+    }
+    
+    div.inner > div:has(ul#icons01) {
+        padding-top: 10px !important;
+        padding-bottom: 25px !important;
+    }
+    
+    ul#icons01 {
+        justify-content: center;
+    }
+    
+    div.inner > div:has(p#text06) {
+        padding-bottom: 10px !important;
+    }
 }
