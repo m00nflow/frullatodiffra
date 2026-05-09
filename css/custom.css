@@ -39,13 +39,15 @@ img[alt="logo_frullatodiffra"] {
     gap: 0;
   }
   .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner > * > *:last-child {
+    flex-direction: column;
     align-items: end;
+    gap: 15px;
   }
   .image-component.style-2 > .frame {
     width: 100% !important;
   }
   img[alt="logo_frullatodiffra"] {
-    max-width: 40px !important;
+    max-width: 45px !important;
   }
 }
 
@@ -81,26 +83,14 @@ a[role="button"]:not(#recensioni-section a):hover::before {
   transform: scaleX(1);
 }
 
+
+/*-------------------------------------------------- Form */
+
 textarea {
     max-width: 100%;
 }
 
-.form-component .actions button {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-.form-component.instance-1 .actions button::before {
-    animation: unset !important;
-    width: 80px !important;
-    opacity: unset !important;
-    height: unset !important;
-    background-size: unset !important;
-    background-repeat: unset !important;
-    background-position: unset !important;
-    background-image: unset !important;
-}
-
-div.checkbox:has(input#form01-consent) label {
+div.checkbox:has(input#form02-consent) label {
     align-items: start;
 }
 
