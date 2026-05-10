@@ -15,7 +15,7 @@ section:not(#home-section, #recensioni-section, #chi-sono-section, #contatti-sec
 /* Header */
 
 img[alt="logo_frullatodiffra"] {
-  max-width: 25px !important;
+  max-width: 30px !important;
 }
 
 .container-component:has(img[alt="logo_frullatodiffra"]) > .wrapper > .inner > :nth-child(1) {
@@ -47,7 +47,7 @@ img[alt="logo_frullatodiffra"] {
     width: 100% !important;
   }
   img[alt="logo_frullatodiffra"] {
-    max-width: 45px !important;
+    max-width: 50px !important;
   }
 }
 
@@ -207,6 +207,15 @@ section.active h3 span br {
     flex-direction: column-reverse;
     gap: 5px;
   }
+}
+
+span.p:has(sub) {
+    margin-bottom: 30px;
+}
+p sub {
+    font-size: 0.75rem !important;
+    padding: 6px 12px;
+    background: #EDE7E4;
 }
 
 /* Image Credits */
