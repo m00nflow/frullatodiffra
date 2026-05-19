@@ -152,6 +152,10 @@ a[role="button"]:not(ul.icons-component a):hover {
 #recensioni-section a[href$='#dragon-trainer']::before {
   content: 'Dean DeBlois | 2025';
 }
+/* Eyes Wide Shut */
+#recensioni-section a[href$='#eyes-wide-shut']::before {
+  content: 'Stanley Kubrick | 1999';
+}
 /* Father Mother Sister Brother */
 #recensioni-section a[href$='#father-mother-sister-brother']::before {
   content: 'Jim Jarmusch | 2025';
