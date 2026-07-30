@@ -184,6 +184,10 @@ a[role="button"]:not(ul.icons-component a):hover {
 #recensioni-section a[href$='#saltburn']::before {
   content: 'Emerald Fennell | 2023';
 }
+/* The Odyssey */
+#recensioni-section a[href$='#the-odyssey']::before {
+  content: 'Christopher Nolan | 2026';
+}
 /* The divergent series */
 #recensioni-section a[href$='#the-divergent-series']::before {
   content: 'Neil Burger, Robert Schwentke | 2014-2016';
