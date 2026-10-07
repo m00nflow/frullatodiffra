@@ -136,6 +136,10 @@ a[role="button"]:not(ul.icons-component a):hover {
 #recensioni-section a[href$='#cime-tempestose']::before {
   content: 'Emerald Fennell | 2026';
 }
+/* Digger */
+#recensioni-section a[href$='#digger']::before {
+  content: 'Alejandro G. Iñárritu | 2026';
+}
 /* Dragon Trainer */
 #recensioni-section a[href$='#dragon-trainer']::before {
   content: 'Dean DeBlois | 2025';
